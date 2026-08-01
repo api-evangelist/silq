@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: probed
+source: https://www.onesilq.com
+description: >-
+  Result of probing the /.well-known/ discovery surface for the Silq (OneSilq)
+  website host. Status is the HTTP code observed at fetch time on 2026-07-21.
+  No document returned a real payload — the site publishes no well-known
+  discovery documents. Absence is valid, expected data. No WellKnown/SecurityTxt
+  pointer is wired because nothing was found.
+hosts:
+  - host: https://www.onesilq.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404

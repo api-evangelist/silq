@@ -1,22 +1,83 @@
 aid: silq
 name: Silq
-description: Silq is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Silq (OneSilq) is a digital freight forwarder delivering fast, transparent
+  global shipping and supply-chain services. Offerings span ocean freight
+  (full container load, less-than-container load and shared container load),
+  air freight, buyer's consolidation, cargo value protection, customs brokerage
+  and trucking/drayage, plus quality-control inspections across China, India,
+  Vietnam, Indonesia and Bangladesh. The platform layers real-time shipment
+  visibility, live ocean-carrier freight rates, expert trade advisory and
+  built-in risk protection for importers and small shippers.
 url: https://raw.githubusercontent.com/api-evangelist/silq/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/68dac20637579522c9947199/6908e4696e517fcd80315386_Meta%20Image.avif
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - speedinvest
-x-tier: stub
+x-tier: enriched
 x-tier-reason: portfolio-lead
+x-identity-note: >-
+  Identity resolved to the freight forwarder at https://www.onesilq.com — the
+  canonical "Silq" brand (getsilq.com and silq.ai both redirect here). Distinct
+  from unrelated same-name companies silqpay.com (legal practice management) and
+  trysilq.com (AI OS for African informal businesses). The speedinvest backing
+  is inherited from the source VC-portfolio harvest and was not independently
+  re-verified in this pass (web search budget exhausted; VC portfolio page
+  Cloudflare-gated). No public API/developer surface exists as of this pass:
+  /api, /developers, /docs and /openapi.json all return 404.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Freight Forwarding
+- Logistics
+- Supply Chain
+- Shipping
+- Customs Brokerage
+- Ocean Freight
+- Air Freight
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/silq-domain-security.yml
+- name: Website
+  url: https://www.onesilq.com
+  type: Website
+- name: Blog
+  url: https://www.onesilq.com/blog
+  type: Blog
+- name: Get Started
+  url: https://www.onesilq.com/get-started
+  type: SignUp
+- name: Privacy Policy
+  url: https://www.onesilq.com/privacy-policy
+  type: PrivacyPolicy
+- name: Terms of Service
+  url: https://www.onesilq.com/terms-of-service
+  type: TermsOfService
+- name: LLMs AI Access Policy
+  url: llms/silq-llms.txt
+  type: LLMsTxt
+apis: []
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
