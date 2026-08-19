@@ -37,7 +37,7 @@ x-identity-note: >-
   re-verified in this pass (web search budget exhausted; VC portfolio page
   Cloudflare-gated). No public API/developer surface exists as of this pass:
   /api, /developers, /docs and /openapi.json all return 404.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
